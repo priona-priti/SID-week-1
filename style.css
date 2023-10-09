@@ -1,0 +1,449 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    /* outline:2px solid red; */
+    color: green;
+    border: border-box;
+    font-family: 'Kiwi Maru',serif;
+}
+.container::before{
+    display: flex;
+    content: " ";
+    background: url('images/codefin.webp') no-repeat center center/cover;
+    position: absolute;
+    height: 180%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+.container{
+    height: 110vh;
+}
+.navbar{
+    width: 100%;
+    height: 10vh;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+}
+.navbar ul a{
+    text-decoration: none;
+    color: rgb(189, 229, 253);
+    font-size: 1.2rem;
+}
+.navbar ul a:hover{
+    color: rgb(118, 192, 192);
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    height: 100%;
+    color: white;
+    height: 70vh;
+}
+.intro h1{
+      cursor: pointer;
+      padding-left: 30px;
+      font-family: 'Young Serif', serif;
+      font-size: 4.5rem;
+      color: white;
+    }
+.intro  h1:hover{
+        transform: translateY(-10px);
+        transition: all .3s ease-in-out .1s;
+}
+.intro h3{
+    font-size: 3rem;
+    font-weight: 400;
+    color: rgb(189, 229, 253);
+    padding-left: 25px;
+}
+.first-page{
+    height: 100vh;
+}
+.butnn{
+    font-size: 1.1rem;
+    border-radius: 10px;
+    color: darkblue;
+    margin: 30px;
+    width: 9vw;
+    height: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 20px 20px 20px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.butnn:hover{
+    transform: scale(1.05);
+    color: rgb(28, 2, 118);
+    font-weight: 700;
+
+}
+/* Second Page */
+#about-me::before{
+    display: flex;
+    content: " ";
+    background: url('images/blue2.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 110%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+#about-me{
+   height: 110vh;
+   width: 80vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+#about-me .I-am{
+    padding-top: 30px;
+    font-size: 2.2rem;
+}
+#about-me b{
+    color: white;
+    font-size: 2rem;
+}
+#about-me h1{
+    padding-left: 20px;
+    color: rgb(189, 229, 253);
+    font-size: 3rem;
+}
+#about-me h3{
+    padding-left: 20px;
+    color: rgb(190, 194, 217);
+    font-weight: 500;
+    font-size: 2rem;
+    padding-top: 0px;
+}
+#about-me li{
+    cursor: pointer;
+    padding-top: 30px;
+    width: 75%;
+    color: white;
+    font-weight: 400;
+    font-size: 1.1rem;
+    padding-left: 20px;
+}
+#about-me ul li{
+    list-style: circle;
+}
+#about-me li:hover{
+    transform: translateY(15px);
+    transition: all .95s ease-in-out .1s;
+}
+.about-me-content{
+    display: flex;
+}
+.content{
+    width: 100%;
+}
+.about-me-content .me-image{
+    height: 60vh;
+    width: 30vw;
+    border-radius: 30px;
+    width: 50%;
+}
+.about-me-content img{
+    height: 60vh;
+    width: 20vw;
+    border-radius: 30px;
+    transition-duration: .95s;
+    opacity: .9;
+}
+.about-me-content img:hover{
+    transform: scale(1.07);
+}
+/* page 2  */
+.skills::before{
+    content: " ";
+    background: url('images/Wallpaperbluedark.png') no-repeat center center/cover ;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+.skills{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.h1{
+     padding: 30px 0px 0px 40px;
+     height: 10vh;
+     font-family: 'Young Serif', serif;
+     font-weight: 700;
+     font-size: 2rem;
+     color: white;
+}
+.skills h2{
+    padding-left: 40px;
+    font-weight: 300;
+    font-family: 'Young Serif', serif;
+    padding-bottom: 10px;
+    color: rgb(186, 210, 253);
+}
+.web-3{
+    cursor: pointer;
+    border-radius: 30px;
+    height: 17vh;
+    width: 54%;
+    margin-left: 40px;
+    border: 1.6px solid rgb(163, 214, 217);
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5vw;
+}
+.web-3:hover{
+    transform: scale(1.019);
+    transition: all .2s ease-out .1s;
+    
+}
+.box h2{
+    padding-top: 15px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: rgb(186, 210, 253);
+    font-weight: 700;
+}
+.web-3 h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: white;
+    padding-bottom: 6px;
+}
+.web-3 h3:hover{
+   color: rgb(178, 227, 246);
+}
+.box0{
+    font-family: 'Playfair Display', serif;
+    width: 30vh;
+    color: rgb(140, 103, 170);
+}
+
+/* Aspirations */
+.Aspirations::before{
+    content: " ";
+    background: url('images/page.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+.Aspirations{
+    height: 100vh;
+}
+.Aspirations p{
+    cursor: pointer;
+    border: 1.3px solid rgb(130, 230, 250);
+    padding: 30px;
+    margin-left: 30px;
+    color: whitesmoke;
+    width: 55%;
+    font-size: 1rem;
+    font-weight: 400px;
+    border-radius: 30px;
+}
+.Aspirations p:hover{
+    transform: scaleY(1.05);
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+    
+}
+/* Personality */
+.personality::before{
+    content: " ";
+    background: url('images/abdul-a-wmdfPWB2lWM-unsplash.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+.personality{
+    height: 89vh;
+}
+.loading{
+    height: 79vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.loading h2{
+    border-radius: 25px;
+    color: white;
+    border: 1.1px solid rgb(130, 230, 250);
+    margin: 20px 0px 20px 40px;
+    padding: 9px 0px 9px 9px;
+}
+.loading h2:hover{
+    background-color:rgb(130, 230, 250);
+    color: black;
+    width: 160%;
+    transition-duration: .2s; 
+    transition-timing-function: ease-in-out;
+    transform-style: flat;
+    transition-delay: .2s;
+}
+/* Projects */
+.projects::before{
+    content: " ";
+    /* background: url('images/blue2.jpg') no-repeat center center/cover; */
+    background-color: rgb(0, 2, 21);
+    position: absolute;
+    height: 116%;
+    width: 100%;
+    z-index: -1;
+    opacity: .95;
+}
+.projects{
+    height: 116vh;
+}
+.project-list{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.project-list h3{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16vh;
+    width: 25vw;
+    margin: 25px;
+    border: 1.6px solid rgb(130, 230, 250);
+    border-radius: 30px;
+    font-family: 'Playfair Display', serif;
+    padding-left: 10px;
+    color: rgb(186, 210, 253);
+    font-size: 1rem;
+    
+}
+.project-list h3:hover{
+    color: white;
+    transform: translateY(-15px);
+    transition: all .3s ease-in-out .1s;
+}
+.buttn-github{
+    padding: 30px 40px 30px 30px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.butn{
+    height: 8vh;
+    width: 12vw;
+    font-weight: 700;
+    background: linear-gradient(to right,rgb(3, 97, 185),rgb(1, 72, 103));
+    border-radius: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.butn:hover{
+     transform: scale(1.1);
+     background: white;
+     color: darkblue;
+}
+/* Contact Me */
+.github{
+    height: 6.5vh;
+    width: 20vw;
+    text-align: center;
+    padding: 15px 0px 20px 0px;
+    color: white;
+    border-radius: 30px;
+    background: linear-gradient(to right,rgb(3, 97, 185),rgb(1, 72, 103));
+    cursor: pointer;
+}
+.github a{
+    color: rgb(88, 236, 241);
+}
+.github:hover{
+    transform: scale(1.02);
+    background: black;
+}
+.contact-me{
+    content: " ";
+    background:url('images/blue2.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 110%;
+    width: 100%;
+    z-index: -1;
+    opacity: .95;
+}
+.contact-me{
+    height: 60vh;
+}
+.contact-me a{
+    color: rgb(88, 236, 241);
+}
+.contact-me h1{
+     font-family: 'Young Serif', serif;
+     font-weight: 700;
+     padding: 10px 0px 0px 40px;
+     font-size: 2.5rem;
+     color: white;
+}
+.contact{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.contact p{
+    font-size: 1rem;
+    font-weight: 700;
+    height: 6.5vh;
+    width: 20vw;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    color: white;
+    border-radius: 30px;
+    background: linear-gradient(to right,rgb(3, 97, 185),rgb(1, 72, 103));
+    cursor: pointer;
+}
+.contact p:hover{
+    transform: scale(1.02);
+    background: black;
+}
+/* .contact-me h5{
+    font-family: 'Young Serif', serif;
+
+     font-weight: 700;
+     font-size: 1.5rem;
+     color: white;
+} */
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8vw;
+}
+.social-media img{
+    height: 13vh;
+}
+.social-media a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
